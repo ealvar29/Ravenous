@@ -16,6 +16,7 @@
   }
   
   .SearchBar-sort-options li {
+    list-style: none;
     cursor: pointer;
     width: 4.33rem;
     border-bottom: 1px solid #fff;
