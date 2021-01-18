@@ -6,11 +6,12 @@ import Business from '../Business/Business'
     render () {
         return (
             <div className="BusinessList">
-                {
-                this.props.businesses.map((business) => {
-                  return  <Business business={business} />;
-                })
-                }
+            <Business />
+            <Business />
+            <Business />
+            <Business />
+            <Business />
+            <Business />
             </div>
         ); 
     }
