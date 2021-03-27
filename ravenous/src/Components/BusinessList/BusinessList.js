@@ -4,9 +4,10 @@ import Business from "../Business/Business";
 
 class BusinessList extends React.Component {
   render() {
+    const { businessArray } = this.props;
     return (
       <div className="BusinessList">
-        {this.props.businessArray.map((element) => {
+        {businessArray.map((element) => {
           return <Business business={element} />;
         })}
       </div>
