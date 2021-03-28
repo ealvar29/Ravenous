@@ -20,15 +20,16 @@ for (let index = 0; index < 7; index++) {
   businessArray.push(business);
 }
 
-class App extends React.Component {
-  render() {
-    return (
-      <div className="App">
-        <SearchBar />
-        <BusinessList businessArray={businessArray} />
-      </div>
-    );
-  }
-}
+const App = () => {
+  const searchYelp = (term, location, sortBy) => {
+    console.log(`Searching Yelp with ${term}, ${location}, ${sortBy}`);
+  };
+  return (
+    <div className="App">
+      <SearchBar searchYelp={searchYelp} />
+      <BusinessList businessArray={businessArray} />
+    </div>
+  );
+};
 
 export default App;
